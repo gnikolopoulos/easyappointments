@@ -60,6 +60,9 @@
                     <a class="dropdown-item" href="<?= site_url('service_categories') ?>">
                         <?= lang('categories') ?>
                     </a>
+                    <a class="dropdown-item" href="<?= site_url('locations') ?>">
+                        <?= lang('locations') ?>
+                    </a>
                 </div>
             </li>
 
