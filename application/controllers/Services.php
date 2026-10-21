@@ -28,7 +28,7 @@ class Services extends EA_Controller
         'currency',
         'description',
         'color',
-        'location',
+        'id_locations',
         'slot_interval',
         'attendants_number',
         'is_private',
@@ -37,6 +37,7 @@ class Services extends EA_Controller
     ];
     public array $optional_service_fields = [
         'id_service_categories' => null,
+        'id_locations' => null,
         'providers' => [],
     ];
 

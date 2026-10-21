@@ -25,7 +25,7 @@ App.Pages.Services = (function () {
     const $slotInterval = $('#slot-interval');
     const $attendantsNumber = $('#attendants-number');
     const $isPrivate = $('#is-private');
-    const $location = $('#location');
+    const $serviceLocationId = $('#service-location-id');
     const $description = $('#description');
     const $filterServices = $('#filter-services');
     const $color = $('#color');
@@ -125,6 +125,7 @@ App.Pages.Services = (function () {
             $price.val('0');
             $currency.val('');
             $serviceCategoryId.val('');
+            $serviceLocationId.val('');
             $slotInterval.val('15');
             $attendantsNumber.val('1');
         });
@@ -155,7 +156,7 @@ App.Pages.Services = (function () {
                 price: $price.val(),
                 currency: $currency.val(),
                 description: $description.val(),
-                location: $location.val(),
+                id_locations: $serviceLocationId.val() || undefined,
                 color: App.Components.ColorSelection.getColor($color),
                 slot_interval: $slotInterval.val(),
                 attendants_number: $attendantsNumber.val(),
@@ -362,7 +363,6 @@ App.Pages.Services = (function () {
         $price.val(service.price);
         $currency.val(service.currency);
         $description.val(service.description);
-        $location.val(service.location);
         $slotInterval.val(service.slot_interval);
         $attendantsNumber.val(service.attendants_number);
         $isPrivate.prop('checked', service.is_private);
@@ -370,6 +370,9 @@ App.Pages.Services = (function () {
 
         const serviceCategoryId = service.id_service_categories !== null ? service.id_service_categories : '';
         $serviceCategoryId.val(serviceCategoryId);
+
+        const serviceLocationId = service.id_locations !== null ? service.id_locations : '';
+        $serviceLocationId.val(serviceLocationId);
 
         // Display providers
         $('#service-providers a').remove();
@@ -521,6 +524,23 @@ App.Pages.Services = (function () {
     }
 
     /**
+     * Update the locations list box.
+     *
+     * Use this method every time a change is made to the locations db table.
+     */
+    function updateAvailableLocations() {
+        App.Http.Locations.search('', 999).then((response) => {
+            $serviceLocationId.empty();
+
+            $serviceLocationId.append(new Option('', '')).val('');
+
+            response.forEach((location) => {
+                $serviceLocationId.append(new Option(location.name, location.id));
+            });
+        });
+    }
+
+    /**
      * Initialize the module.
      */
     function initialize() {
@@ -528,6 +548,7 @@ App.Pages.Services = (function () {
         App.Pages.Services.filter('');
         App.Pages.Services.addEventListeners();
         updateAvailableServiceCategories();
+        updateAvailableLocations();
     }
 
     document.addEventListener('DOMContentLoaded', initialize);

@@ -120,10 +120,10 @@
             </div>
 
             <div class="mb-3">
-                <label class="form-label" for="location">
+                <label class="form-label" for="service-location-id">
                     <?= lang('location') ?>
                 </label>
-                <input id="location" class="form-control" disabled>
+                <select id="service-location-id" class="form-select" disabled></select>
             </div>
 
             <div class="mb-3">
@@ -196,6 +196,7 @@
 
 <script src="<?= asset_url('assets/js/http/services_http_client.js') ?>"></script>
 <script src="<?= asset_url('assets/js/http/service_categories_http_client.js') ?>"></script>
+<script src="<?= asset_url('assets/js/http/locations_http_client.js') ?>"></script>
 <script src="<?= asset_url('assets/js/pages/services.js') ?>"></script>
 
 <?php end_section('scripts'); ?>

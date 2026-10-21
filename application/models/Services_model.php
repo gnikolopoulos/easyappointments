@@ -29,6 +29,7 @@ class Services_model extends EA_Model
         'attendants_number' => 'integer',
         'is_private' => 'boolean',
         'id_service_categories' => 'integer',
+        'id_locations' => 'integer',
     ];
 
     /**
@@ -41,7 +42,7 @@ class Services_model extends EA_Model
         'price' => 'price',
         'currency' => 'currency',
         'description' => 'description',
-        'location' => 'location',
+        'id_locations' => 'id_locations',
         'color' => 'color',
         'slotInterval' => 'slot_interval',
         'attendantsNumber' => 'attendants_number',
@@ -508,7 +509,7 @@ class Services_model extends EA_Model
             'price' => (float) $service['price'],
             'currency' => $service['currency'],
             'description' => $service['description'],
-            'location' => $service['location'],
+            'id_locations' => $service['id_locations'],
             'slotInterval' => (int) $service['slot_interval'],
             'attendantsNumber' => (int) $service['attendants_number'],
             'isPrivate' => (bool) $service['is_private'],
@@ -557,8 +558,8 @@ class Services_model extends EA_Model
             $decoded_resource['description'] = $service['description'];
         }
 
-        if (array_key_exists('location', $service)) {
-            $decoded_resource['location'] = $service['location'];
+        if (array_key_exists('id_locations', $service)) {
+            $decoded_resource['id_locations'] = $service['id_locations'];
         }
 
         if (array_key_exists('slotInterval', $service)) {
