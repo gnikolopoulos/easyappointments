@@ -78,7 +78,8 @@ class Migration_Add_locations_table extends EA_Migration
             'id_locations' => [
                 'type' => 'INT',
                 'constraint' => 11,
-                'null' => false,
+                'default' => null,
+                'null' => true,
                 'after' => 'color',
             ],
         ]);
