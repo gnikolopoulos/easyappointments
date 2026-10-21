@@ -310,6 +310,7 @@ $lang['delete_personal_information_hint'] = 'Poista kaikki varauksesi ja henkil�
 $lang['delete_personal_information'] = 'Poista henkilökohtainen data';
 $lang['delete_personal_information_prompt'] = 'Oletko aivan varma että haluat poistaa kaikki tietosi? Tätä ei voida perua.';
 $lang['location'] = 'Sijainti';
+$lang['locations'] = 'Sijainnit';
 $lang['working_plan_exception'] = 'Työsuunnitelman poikkeus';
 $lang['working_plan_exceptions'] = 'Työsuunnitelman poikkeukset';
 $lang['working_plan_exceptions_hint'] = 'Lisää työsuunnitelman ulkopuolinen poikkeus.';

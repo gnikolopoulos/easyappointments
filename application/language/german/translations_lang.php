@@ -310,6 +310,7 @@ $lang['delete_personal_information_hint'] = 'Entfernen Sie alle Ihre Termine und
 $lang['delete_personal_information'] = 'Persönliche Informationen löschen';
 $lang['delete_personal_information_prompt'] = 'Sind Sie sicher, dass Sie Ihre persönlichen Daten löschen möchten? Diese Aktion kann nicht rückgängig gemacht werden.';
 $lang['location'] = 'Ort';
+$lang['locations'] = 'Standorte';
 $lang['working_plan_exception'] = 'Arbeitsplan Ausnahme';
 $lang['working_plan_exceptions'] = 'Arbeitsplan Ausnahmen';
 $lang['working_plan_exceptions_hint'] = 'Fügt einen Ausnahmetag außerhalb des Arbeitsplans hinzu.';

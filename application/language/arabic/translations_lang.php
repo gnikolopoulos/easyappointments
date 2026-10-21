@@ -310,6 +310,7 @@ $lang['delete_personal_information_hint'] = 'إزالة جميع مواعيدك 
 $lang['delete_personal_information'] = 'حذف المعلومات الشخصية';
 $lang['delete_personal_information_prompt'] = 'هل أنت متأكد أنك تريد حذف معلوماتك الشخصية؟ لا يمكن التراجع عن هذا الإجراء.';
 $lang['location'] = 'الموقع';
+$lang['locations'] = 'المواقع';
 $lang['working_plan_exception'] = 'استثناء خطة العمل';
 $lang['working_plan_exceptions'] = 'استثناءات خطة العمل';
 $lang['working_plan_exceptions_hint'] = 'إضافة يوم استثناء لخطة العمل، خارج خطة العمل.';

@@ -310,6 +310,7 @@ $lang['delete_personal_information_hint'] = 'Läscht all Är Rendez-vousen an pe
 $lang['delete_personal_information'] = 'Perséinlech Informatioun läschen';
 $lang['delete_personal_information_prompt'] = 'Sidd Dir sécher, datt Dir Är perséinlech Informatioun läsche wëllt? Dës Aktioun kann net réckgängeg gemaach ginn.';
 $lang['location'] = 'Standuert';
+$lang['locations'] = 'Standuerter';
 $lang['working_plan_exception'] = 'Ausnam am Schaffplang';
 $lang['working_plan_exceptions'] = 'Ausnamen am Schaffplang';
 $lang['working_plan_exceptions_hint'] = 'Füügt en Ausnahmsdag bäi, deen ausserhalb vum Schaffplang ass.';

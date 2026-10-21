@@ -310,6 +310,7 @@ $lang['delete_personal_information_hint'] = 'Odstrani vse svoje sestanke in oseb
 $lang['delete_personal_information'] = 'Izbriši osebne podatke';
 $lang['delete_personal_information_prompt'] = 'Ali ste prepričani, da želite izbrisati svoje osebne podatke? Tega dejanja ni mogoče razveljaviti.';
 $lang['location'] = 'Lokacija';
+$lang['locations'] = 'Lokacije';
 $lang['working_plan_exception'] = 'Izjema delovnega načrta';
 $lang['working_plan_exceptions'] = 'Izjeme delovnega načrta';
 $lang['working_plan_exceptions_hint'] = 'Dodaj dan izjeme delovnega načrta, zunaj delovnega načrta.';

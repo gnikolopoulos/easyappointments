@@ -310,6 +310,7 @@ $lang['delete_personal_information_hint'] = 'Hiqni të gjitha takimet dhe inform
 $lang['delete_personal_information'] = 'Fshi Informacionin Personal';
 $lang['delete_personal_information_prompt'] = 'A jeni të sigurt që dëshironi të fshini informacionin tuaj personal? Kjo veprim nuk mund të kthehet mbrapsht.';
 $lang['location'] = 'Vendndodhja';
+$lang['locations'] = 'Vendndodhjet';
 $lang['working_plan_exception'] = 'Përjashtim i Planit të Punës';
 $lang['working_plan_exceptions'] = 'Përjashtimet e Planit të Punës';
 $lang['working_plan_exceptions_hint'] = 'Shtoni një ditë përjashtim të planit të punës, jashtë planit të punës.';

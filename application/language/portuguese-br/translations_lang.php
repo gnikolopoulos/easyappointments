@@ -310,6 +310,7 @@ $lang['delete_personal_information_hint'] = 'Deletar toda informação pessoal d
 $lang['delete_personal_information'] = 'Deletar informação pessoal';
 $lang['delete_personal_information_prompt'] = 'Tem certeza que deja deletar suas informações pessoais? Essa ação não pode ser desfeita.';
 $lang['location'] = 'Local';
+$lang['locations'] = 'Locais';
 $lang['working_plan_exception'] = 'Exceção do plano de trabalho';
 $lang['working_plan_exceptions'] = 'Exceções do plano de trabalho';
 $lang['working_plan_exceptions_hint'] = 'Adicione um dia de exceção do plano de trabalho, fora do plano de trabalho.';

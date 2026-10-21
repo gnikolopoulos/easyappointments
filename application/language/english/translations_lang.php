@@ -310,6 +310,7 @@ $lang['delete_personal_information_hint'] = 'Remove all your appointments and pe
 $lang['delete_personal_information'] = 'Delete Personal Information';
 $lang['delete_personal_information_prompt'] = 'Are you sure that you want to delete your personal information? This action cannot be undone.';
 $lang['location'] = 'Location';
+$lang['locations'] = 'Locations';
 $lang['working_plan_exception'] = 'Working Plan Exception';
 $lang['working_plan_exceptions'] = 'Working Plan Exceptions';
 $lang['working_plan_exceptions_hint'] = 'Add a working plan exception day, outside the working plan.';

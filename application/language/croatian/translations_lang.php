@@ -310,6 +310,7 @@ $lang['delete_personal_information_hint'] = 'Uklonite sve svoje termine i osobne
 $lang['delete_personal_information'] = 'Izbriši Osobne Informacije';
 $lang['delete_personal_information_prompt'] = 'Jeste li sigurni da želite izbrisati svoje osobne informacije? Ova akcija ne može biti poništena.';
 $lang['location'] = 'Lokacija';
+$lang['locations'] = 'Lokacije';
 $lang['working_plan_exception'] = 'Izuzetak u Radnom Planu';
 $lang['working_plan_exceptions'] = 'Izuzeci u Radnom Planu';
 $lang['working_plan_exceptions_hint'] = 'Dodajte izuzetak u radnom planu izvan radnog vremena.';

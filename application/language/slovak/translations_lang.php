@@ -310,6 +310,7 @@ $lang['delete_personal_information_hint'] = 'Odstráňte všetky svoje stretnuti
 $lang['delete_personal_information'] = 'Vymazať osobné údaje';
 $lang['delete_personal_information_prompt'] = 'Ste si istý, že chcete vymazať svoje osobné údaje? Túto akciu nie je možné vrátiť späť.';
 $lang['location'] = 'Miesto';
+$lang['locations'] = 'Lokality';
 $lang['working_plan_exception'] = 'Výnimka pracovného plánu';
 $lang['working_plan_exceptions'] = 'Výnimky pracovného plánu';
 $lang['working_plan_exceptions_hint'] = 'Pridajte deň výnimky pracovného plánu mimo pracovného plánu.';

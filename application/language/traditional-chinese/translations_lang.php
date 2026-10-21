@@ -310,6 +310,7 @@ $lang['delete_personal_information_hint'] = '從系統中移除您的所有預�
 $lang['delete_personal_information'] = '刪除個人資訊';
 $lang['delete_personal_information_prompt'] = '您確定要刪除您的個人資訊嗎？此操作無法復原。';
 $lang['location'] = '地點';
+$lang['locations'] = '地點';
 $lang['working_plan_exception'] = '工作計劃例外';
 $lang['working_plan_exceptions'] = '工作計劃例外';
 $lang['working_plan_exceptions_hint'] = '新增工作計劃例外日，超出工作計劃。';

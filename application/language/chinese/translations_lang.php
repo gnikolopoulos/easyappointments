@@ -310,6 +310,7 @@ $lang['delete_personal_information_hint'] = '从系统中删除所有个人信�
 $lang['delete_personal_information'] = '删除个人信息';
 $lang['delete_personal_information_prompt'] = '您确定要删除您的个人信息吗？此操作不可撤销。';
 $lang['location'] = '地点';
+$lang['locations'] = '地点';
 $lang['working_plan_exception'] = '工作计划例外';
 $lang['working_plan_exceptions'] = '工作计划例外';
 $lang['working_plan_exceptions_hint'] = '添加工作计划例外天数，超出工作计划。';

@@ -310,6 +310,7 @@ $lang['delete_personal_information_hint'] = 'Ta bort alla dina personuppgifter f
 $lang['delete_personal_information'] = 'Ta bort din personliga information';
 $lang['delete_personal_information_prompt'] = 'Är du säker på att du vill ta bort all din information från systemet? Denna åtgärd går inte att ångra.';
 $lang['location'] = 'Plats';
+$lang['locations'] = 'Platser';
 $lang['working_plan_exception'] = 'Extra arbetsdag';
 $lang['working_plan_exceptions'] = 'Extra arbetsdagar';
 $lang['working_plan_exceptions_hint'] = 'Lägg till en arbetsdag utanför schemat.';

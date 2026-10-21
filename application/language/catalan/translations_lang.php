@@ -310,6 +310,7 @@ $lang['delete_personal_information_hint'] = 'Elimineu les vostres dades del sist
 $lang['delete_personal_information'] = 'Eliminació de dades personals';
 $lang['delete_personal_information_prompt'] = 'Esteu segur que voleu eliminar la vostra informació personal? Aquesta acció no es pot desfer.';
 $lang['location'] = 'Ubicació';
+$lang['locations'] = 'Ubicacions';
 $lang['working_plan_exception'] = 'Excepció del pla de treball';
 $lang['working_plan_exceptions'] = 'Excepcions del pla de treball';
 $lang['working_plan_exceptions_hint'] = 'Afegeix un dia d\'excepció del pla de treball, fora del pla de treball.';

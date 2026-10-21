@@ -310,6 +310,7 @@ $lang['delete_personal_information_hint'] = 'सिस्टम से अपन
 $lang['delete_personal_information'] = 'व्यक्तिगत जानकारी हटाएं';
 $lang['delete_personal_information_prompt'] = 'क्या आप वास्तव में अपनी व्यक्तिगत जानकारी हटाना चाहते हैं? यह क्रिया पूर्ववत नहीं की जा सकती।';
 $lang['location'] = 'स्थान';
+$lang['locations'] = 'स्थानों';
 $lang['working_plan_exception'] = 'कार्य योजना अपवाद';
 $lang['working_plan_exceptions'] = 'कार्य योजना अपवाद';
 $lang['working_plan_exceptions_hint'] = 'कार्य योजना के बाहर एक कार्य योजना अपवाद दिन जोड़ें।';

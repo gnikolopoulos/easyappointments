@@ -310,6 +310,7 @@ $lang['delete_personal_information_hint'] = 'Odstranit ze systému všechny osob
 $lang['delete_personal_information'] = 'Odstranit osobní údaje';
 $lang['delete_personal_information_prompt'] = 'Jste si jisti, že chcete odstranit vaše osobní údaje? Tuto akci nelze vzít zpět.';
 $lang['location'] = 'Místo';
+$lang['locations'] = 'Lokality';
 $lang['working_plan_exception'] = 'Výjimka z pracovní doby';
 $lang['working_plan_exceptions'] = 'Výjimky z pracovní doby';
 $lang['working_plan_exceptions_hint'] = 'Přidat výjimku z pracovní doby mimo pracovní plán.';

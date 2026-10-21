@@ -310,6 +310,7 @@ $lang['delete_personal_information_hint'] = 'Изтрийте цялата ли�
 $lang['delete_personal_information'] = 'Изтриване на лична информация';
 $lang['delete_personal_information_prompt'] = 'Сигурни ли сте, че искате да изтриете личната си информация? Това действие не може да бъде отменено.';
 $lang['location'] = 'Местоположение';
+$lang['locations'] = 'Местоположения';
 $lang['working_plan_exception'] = 'Изключение от работния план';
 $lang['working_plan_exceptions'] = 'Изключения от работния план';
 $lang['working_plan_exceptions_hint'] = 'Добавяне на ден за изключение от работния план, извън работния план.';

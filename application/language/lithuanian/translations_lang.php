@@ -310,6 +310,7 @@ $lang['delete_personal_information_hint'] = 'Pašalinti iš sistemos visus jūs�
 $lang['delete_personal_information'] = 'Pašalinti asmeninę informaciją';
 $lang['delete_personal_information_prompt'] = 'Ar tikrai norite pašalinti savo asmeninę informaciją? Šio veiksmo atšaukti negalima.';
 $lang['location'] = 'Vieta';
+$lang['locations'] = 'Vietos';
 $lang['working_plan_exception'] = 'Darbo grafiko išimtis';
 $lang['working_plan_exceptions'] = 'Darbo grafiko išimtys';
 $lang['working_plan_exceptions_hint'] = 'Įveskite išimtines datas, kuriomis šio paslaugų teikėjo darbo grafikas skirsis nuo įprastinio.';

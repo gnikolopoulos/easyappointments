@@ -310,6 +310,7 @@ $lang['delete_personal_information_hint'] = 'सिस्टमवरून स�
 $lang['delete_personal_information'] = 'वैयक्तिक माहिती हटवा';
 $lang['delete_personal_information_prompt'] = 'आपली खात्री आहे की आपण आपली वैयक्तिक माहिती हटवू इच्छिता? ही क्रिया पूर्ववत करणे शक्य नाही.';
 $lang['location'] = 'स्थान';
+$lang['locations'] = 'ठिकाणे';
 $lang['working_plan_exception'] = 'कामकाज योजना अपवाद';
 $lang['working_plan_exceptions'] = 'कामकाज योजना अपवाद';
 $lang['working_plan_exceptions_hint'] = 'कामकाज योजनाच्या बाहेर एक कामकाज योजना अपवाद दिवस जोडा.';

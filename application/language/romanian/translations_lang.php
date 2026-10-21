@@ -310,6 +310,7 @@ $lang['delete_personal_information_hint'] = 'Eliminați toate programările și 
 $lang['delete_personal_information'] = 'Ștergeți Informațiile Personale';
 $lang['delete_personal_information_prompt'] = 'Sunteți sigur că doriți să ștergeți informațiile personale? Această acțiune nu poate fi anulată.';
 $lang['location'] = 'Locație';
+$lang['locations'] = 'Locații';
 $lang['working_plan_exception'] = 'Excepție Plan de Lucru';
 $lang['working_plan_exceptions'] = 'Excepții Plan de Lucru';
 $lang['working_plan_exceptions_hint'] = 'Adăugați o zi de excepție în planul de lucru, în afara planului de lucru.';

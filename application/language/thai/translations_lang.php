@@ -310,6 +310,7 @@ $lang['delete_personal_information_hint'] = 'ลบการนัดหมา�
 $lang['delete_personal_information'] = 'ลบข้อมูลส่วนบุคคล';
 $lang['delete_personal_information_prompt'] = 'คุณแน่ใจหรือไม่ว่าต้องการลบข้อมูลส่วนบุคคลของคุณ การดำเนินการนี้ไม่สามารถยกเลิกได้';
 $lang['location'] = 'ที่ตั้ง';
+$lang['locations'] = 'สถานที่ตั้ง';
 $lang['working_plan_exception'] = 'ข้อยกเว้นแผนการทำงาน';
 $lang['working_plan_exceptions'] = 'ข้อยกเว้นแผนการทำงาน';
 $lang['working_plan_exceptions_hint'] = 'เพิ่มวันยกเว้นแผนการทำงานนอกแผนการทำงาน';

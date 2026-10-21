@@ -310,6 +310,7 @@ $lang['delete_personal_information_hint'] = 'Effacer toutes vos données personn
 $lang['delete_personal_information'] = 'Effacer toutes mes données personnelles';
 $lang['delete_personal_information_prompt'] = 'Êtes-vous sûr·e de vouloir effacer toutes vos données personnelles ? Cette action est irréversible.';
 $lang['location'] = 'Emplacement';
+$lang['locations'] = 'Emplacements';
 $lang['working_plan_exception'] = 'Exception au planning';
 $lang['working_plan_exceptions'] = 'Exceptions au planning';
 $lang['working_plan_exceptions_hint'] = 'Ajouter un jour d’exception au planning, en dehors du planning.';

@@ -310,6 +310,7 @@ $lang['delete_personal_information_hint'] = 'Usuń wszystkie swoje wizyty i dane
 $lang['delete_personal_information'] = 'Usuń dane osobowe';
 $lang['delete_personal_information_prompt'] = 'Czy na pewno chcesz usunąć swoje dane osobowe? Ta akcja jest nieodwracalna.';
 $lang['location'] = 'Lokalizacja';
+$lang['locations'] = 'Lokalizacje';
 $lang['working_plan_exception'] = 'Wyjątek w planie pracy';
 $lang['working_plan_exceptions'] = 'Wyjątki w planie pracy';
 $lang['working_plan_exceptions_hint'] = 'Dodaj dzień wyjątkowy w planie pracy, poza standardowym planem.';

@@ -310,6 +310,7 @@ $lang['delete_personal_information_hint'] = 'Noņemiet no sistēmas visas savas 
 $lang['delete_personal_information'] = 'Dzēst personisko informāciju';
 $lang['delete_personal_information_prompt'] = 'Vai esat pārliecināts, ka vēlaties dzēst savu personisko informāciju? Šo darbību nevar atcelt.';
 $lang['location'] = 'Atrašanās vieta';
+$lang['locations'] = 'Atrašanās vietas';
 $lang['working_plan_exception'] = 'Darba plāna izņēmums';
 $lang['working_plan_exceptions'] = 'Darba plāna izņēmumi';
 $lang['working_plan_exceptions_hint'] = 'Pievienot darba plāna izņēmuma dienu ārpus darba plāna.';

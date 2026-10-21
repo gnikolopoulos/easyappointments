@@ -310,6 +310,7 @@ $lang['delete_personal_information_hint'] = 'Barcha uchrashuvlaringiz va shaxsiy
 $lang['delete_personal_information'] = 'Shaxsiy ma\'lumotlarni o\'chirish';
 $lang['delete_personal_information_prompt'] = 'Shaxsiy ma\'lumotlaringizni o\'chirishga aminmisiz? Bu amalni qaytarib bo\'lmaydi.';
 $lang['location'] = 'Joylashuv';
+$lang['locations'] = 'Joylashuvlar';
 $lang['working_plan_exception'] = 'Ish jadvali istisnosi';
 $lang['working_plan_exceptions'] = 'Ish jadvali istisnolari';
 $lang['working_plan_exceptions_hint'] = 'Ish jadvalidan tashqari istisno kunini qo\'shing.';

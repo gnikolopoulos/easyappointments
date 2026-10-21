@@ -310,6 +310,7 @@ $lang['delete_personal_information_hint'] = 'Verwijder al je afspraken en persoo
 $lang['delete_personal_information'] = 'Verwijder Persoonlijke Informatie';
 $lang['delete_personal_information_prompt'] = 'Weet je zeker dat je je persoonlijke informatie wilt verwijderen? Deze actie kan niet ongedaan worden gemaakt.';
 $lang['location'] = 'Locatie';
+$lang['locations'] = 'Locaties';
 $lang['working_plan_exception'] = 'Uitzondering Werkrooster';
 $lang['working_plan_exceptions'] = 'Uitzonderingen Werkrooster';
 $lang['working_plan_exceptions_hint'] = 'Voeg een uitzonderingsdag toe aan het werkrooster, buiten het werkrooster.';

@@ -310,6 +310,7 @@ $lang['delete_personal_information_hint'] = 'システムからすべての予�
 $lang['delete_personal_information'] = '個人情報を削除';
 $lang['delete_personal_information_prompt'] = '本当に個人情報を削除しますか？この操作は元に戻せません。';
 $lang['location'] = '場所';
+$lang['locations'] = '所在地';
 $lang['working_plan_exception'] = '作業計画の例外';
 $lang['working_plan_exceptions'] = '作業計画の例外';
 $lang['working_plan_exceptions_hint'] = '作業計画の例外日を追加します。';

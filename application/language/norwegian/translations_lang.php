@@ -310,6 +310,7 @@ $lang['delete_personal_information_hint'] = 'Fjern alle avtaler og personlig inf
 $lang['delete_personal_information'] = 'Slett personlig informasjon';
 $lang['delete_personal_information_prompt'] = 'Er du sikker på at du vil slette personopplysningene dine? Denne handlingen kan ikke angres.';
 $lang['location'] = 'Sted';
+$lang['locations'] = 'Steder';
 $lang['working_plan_exception'] = 'Unntak fra arbeidsplan';
 $lang['working_plan_exceptions'] = 'Unntak fra arbeidsplanen';
 $lang['working_plan_exceptions_hint'] = 'Legg til en unntaksdag for arbeidsplanen, utenfor arbeidsplanen.';

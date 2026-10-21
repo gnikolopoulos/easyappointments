@@ -310,6 +310,7 @@ $lang['delete_personal_information_hint'] = 'Törölje az összes időpontját �
 $lang['delete_personal_information'] = 'Személyes Adatok Törlése';
 $lang['delete_personal_information_prompt'] = 'Biztos benne, hogy törölni szeretné személyes adatait? Ez a művelet nem visszavonható.';
 $lang['location'] = 'Helyszín';
+$lang['locations'] = 'Helyszínek';
 $lang['working_plan_exception'] = 'Munkaterv Kivétel';
 $lang['working_plan_exceptions'] = 'Munkaterv Kivételek';
 $lang['working_plan_exceptions_hint'] = 'Adjon hozzá egy munkaterv kivételi napot, amely a munkaterven kívül esik.';

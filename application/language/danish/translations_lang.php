@@ -310,6 +310,7 @@ $lang['delete_personal_information_hint'] = 'Slet alle dine personlige oplysning
 $lang['delete_personal_information'] = 'Slet personlige oplysninger';
 $lang['delete_personal_information_prompt'] = 'Er du sikker på, at du vil slette dine personlige oplysninger? De kan ikke gendannes!';
 $lang['location'] = 'Placering';
+$lang['locations'] = 'Lokationer';
 $lang['working_plan_exception'] = 'Arbejdsplan-undtagelse';
 $lang['working_plan_exceptions'] = 'Arbejdsplan-undtagelser';
 $lang['working_plan_exceptions_hint'] = 'Tilføj en arbejdsplan-undtagelsesdag, uden for arbejdsplanen.';

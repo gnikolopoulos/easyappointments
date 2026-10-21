@@ -310,6 +310,7 @@ $lang['delete_personal_information_hint'] = 'Видалити всі ваші з
 $lang['delete_personal_information'] = 'Видалити особисту інформацію';
 $lang['delete_personal_information_prompt'] = 'Ви впевнені, що хочете видалити вашу особисту інформацію? Цю дію неможливо скасувати.';
 $lang['location'] = 'Місцезнаходження';
+$lang['locations'] = 'Місця розташування';
 $lang['working_plan_exception'] = 'Виключення з робочого плану';
 $lang['working_plan_exceptions'] = 'Виключення з робочого плану';
 $lang['working_plan_exceptions_hint'] = 'Додати день виключення з робочого плану, поза графіком роботи.';

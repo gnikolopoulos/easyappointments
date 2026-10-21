@@ -310,6 +310,7 @@ $lang['delete_personal_information_hint'] = 'حذف تمامی قرارها و �
 $lang['delete_personal_information'] = 'حذف اطلاعات شخصی';
 $lang['delete_personal_information_prompt'] = 'از حذف اطلاعات شخصیتان اطمینان دارید؟ این عمل برگشت پذیر نیست';
 $lang['location'] = 'محل';
+$lang['locations'] = 'مکانها';
 $lang['working_plan_exception'] = 'استثنا برنامه کاری';
 $lang['working_plan_exceptions'] = 'استثنائات برنامه کاری';
 $lang['working_plan_exceptions_hint'] = 'یک روز کاری خارج از روال همیشگی اضافه کنید';

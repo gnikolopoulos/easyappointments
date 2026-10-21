@@ -310,6 +310,7 @@ $lang['delete_personal_information_hint'] = 'Remova todos os seus compromissos e
 $lang['delete_personal_information'] = 'Excluir Informações Pessoais';
 $lang['delete_personal_information_prompt'] = 'Tem certeza de que deseja excluir suas informações pessoais? Esta ação não pode ser desfeita.';
 $lang['location'] = 'Localização';
+$lang['locations'] = 'Locais';
 $lang['working_plan_exception'] = 'Exceção ao Plano de Trabalho';
 $lang['working_plan_exceptions'] = 'Exceções ao Plano de Trabalho';
 $lang['working_plan_exceptions_hint'] = 'Adicione um dia de exceção ao plano de trabalho, fora do plano de trabalho.';

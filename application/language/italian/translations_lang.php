@@ -310,6 +310,7 @@ $lang['delete_personal_information_hint'] = 'Cancella tutti i dati personali dal
 $lang['delete_personal_information'] = 'Cancella dati personali';
 $lang['delete_personal_information_prompt'] = 'Sicuro di voler cancellare i tuoi dati personali? Questa operazione è irreversibile.';
 $lang['location'] = 'Ubicazione';
+$lang['locations'] = 'Sedi';
 $lang['working_plan_exception'] = 'Giorno extra';
 $lang['working_plan_exceptions'] = 'Giorni Extra';
 $lang['working_plan_exceptions_hint'] = 'Aggiungi una giornata lavorativa al di fuori del piano di lavoro.';

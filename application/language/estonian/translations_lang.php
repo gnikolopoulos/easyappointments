@@ -310,6 +310,7 @@ $lang['delete_personal_information_hint'] = 'Eemalda süsteemist kõik minu bron
 $lang['delete_personal_information'] = 'Kustuta isikuandmed';
 $lang['delete_personal_information_prompt'] = 'Oled kindel, et soovid enda isikuandmeid kustutada. Seda tegevust ei saa tagasi võtta.';
 $lang['location'] = 'Asukoht';
+$lang['locations'] = 'Asukohad';
 $lang['working_plan_exception'] = 'Tööplaani erand';
 $lang['working_plan_exceptions'] = 'Tööplaani erandid';
 $lang['working_plan_exceptions_hint'] = 'Lisa tööplaani erandpäev (väljapoole tavalist tööplaani).';

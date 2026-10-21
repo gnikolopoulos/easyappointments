@@ -310,6 +310,7 @@ $lang['delete_personal_information_hint'] = 'Κατάργηση όλων των 
 $lang['delete_personal_information'] = 'Διαγραφή Προσωπικών Πληροφοριών';
 $lang['delete_personal_information_prompt'] = 'Είστε σίγουρος ότι θέλετε να διαγράψετε τις προσωπικές σας πληροφορίες; Αυτή η ενέργεια δεν μπορεί να αναιρεθεί.';
 $lang['location'] = 'Τοποθεσία';
+$lang['locations'] = 'Τοποθεσίες';
 $lang['working_plan_exception'] = 'Εξαιρέση Πλάνου Εργασίας';
 $lang['working_plan_exceptions'] = 'Εξαιρέσεις Πλάνου Εργασίας';
 $lang['working_plan_exceptions_hint'] = 'Προσθέστε μια εξαίρεση πλάνου εργασίας, εκτός του κανονικού πλάνου εργασίας.';

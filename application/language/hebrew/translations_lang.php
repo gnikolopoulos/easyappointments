@@ -310,6 +310,7 @@ $lang['delete_personal_information_hint'] = 'מחק את כל המידע האי�
 $lang['delete_personal_information'] = 'מחק מידע אישי';
 $lang['delete_personal_information_prompt'] = 'האם את/ה בטוח/ה שברצונך למחוק את המידע האישי שלך? לא ניתן לבטל פעולה זו.';
 $lang['location'] = 'מיקום';
+$lang['locations'] = 'מיקומים';
 $lang['working_plan_exception'] = 'חריגה בתכנית עבודה';
 $lang['working_plan_exceptions'] = 'חריגות בתכנית עבודה';
 $lang['working_plan_exceptions_hint'] = 'הוספת יום חריג של תוכנית עבודה, מחוץ לתוכנית העבודה.';

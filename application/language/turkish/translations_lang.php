@@ -310,6 +310,7 @@ $lang['delete_personal_information_hint'] = 'Tüm randevularınızı ve kişisel
 $lang['delete_personal_information'] = 'Kişisel Bilgileri Sil';
 $lang['delete_personal_information_prompt'] = 'Kişisel bilgilerinizi silmek istediğinizden emin misiniz? Bu işlem geri alınamaz.';
 $lang['location'] = 'Konum';
+$lang['locations'] = 'Konumlar';
 $lang['working_plan_exception'] = 'Çalışma Planı İstisnası';
 $lang['working_plan_exceptions'] = 'Çalışma Planı İstisnaları';
 $lang['working_plan_exceptions_hint'] = 'Çalışma planı dışında bir çalışma planı istisna günü ekleyin.';
