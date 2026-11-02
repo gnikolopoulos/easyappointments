@@ -85,6 +85,7 @@ class Calendar extends EA_Controller
         $this->load->model('blocked_periods_model');
         $this->load->model('customers_model');
         $this->load->model('services_model');
+        $this->load->model('locations_model');
         $this->load->model('providers_model');
         $this->load->model('roles_model');
 
@@ -195,6 +196,7 @@ class Calendar extends EA_Controller
         }
 
         $available_services = $this->services_model->get_available_services();
+        $available_locations = $this->locations_model->get_available_locations();
 
         // Filter services to only include those that can be served by at least one available provider
         $provider_service_ids = [];
@@ -243,6 +245,7 @@ class Calendar extends EA_Controller
             'calendar_view' => $calendar_view,
             'available_providers' => filter_sensitive_users_data($available_providers),
             'available_services' => $available_services,
+            'available_locations' => $available_locations,
             'secretary_providers' => $secretary_providers,
             'edit_appointment' => $edit_appointment,
             'google_sync_feature' => filter_var(
@@ -265,6 +268,7 @@ class Calendar extends EA_Controller
             'calendar_view' => $calendar_view,
             'available_providers' => filter_sensitive_users_data($available_providers),
             'available_services' => $available_services,
+            'available_locations' => $available_locations,
             'secretary_providers' => $secretary_providers,
             'appointment_status_options' => json_decode($appointment_status_options, true) ?? [],
             'require_first_name' => setting('require_first_name'),

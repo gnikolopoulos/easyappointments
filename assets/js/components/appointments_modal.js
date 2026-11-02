@@ -42,6 +42,7 @@ App.Components.AppointmentsModal = (function () {
     const $appointmentNotes = $('#appointment-notes');
     const $reloadAppointments = $('#reload-appointments');
     const $selectFilterItem = $('#select-filter-item');
+    const $selectLocation = $('#select-location');
     const $selectService = $('#select-service');
     const $selectProvider = $('#select-provider');
     const $insertAppointment = $('#insert-appointment');
@@ -105,6 +106,7 @@ App.Components.AppointmentsModal = (function () {
 
             const appointment = {
                 id_services: $selectService.val(),
+                id_location: $selectLocation.val(),
                 id_users_provider: $selectProvider.val(),
                 start_datetime: startDatetime,
                 end_datetime: endDatetime,
@@ -437,6 +439,28 @@ App.Components.AppointmentsModal = (function () {
                         $('#loading').css('visibility', '');
                     });
             }, 1000);
+        });
+
+        /**
+         * Event: Selected Location "Change"
+         *
+         * When the user clicks on a location, its available services should become visible.
+         */
+        $selectLocation.on('change', () => {
+            const locationId = $selectLocation.val();
+
+            $selectService.empty();
+
+            // Update the services select box.
+
+            vars('available_services').forEach((service) => {
+                // If the current servide is enabled for the selected location, add it to the list box.
+                if (Number(service.id_locations) === Number(locationId)) {
+                    $selectService.append(new Option(service.name, service.id));
+                }
+            });
+
+            $selectService.trigger('change');
         });
 
         /**

@@ -122,7 +122,7 @@
 <!-- Page Components -->
 
 <?php component('appointments_modal', [
-    'available_services' => vars('available_services'),
+    'available_locations' => vars('available_locations'),
     'appointment_status_options' => vars('appointment_status_options'),
     'timezones' => vars('timezones'),
     'require_first_name' => vars('require_first_name'),

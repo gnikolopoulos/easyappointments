@@ -208,6 +208,31 @@ class Locations_model extends EA_Model
     }
 
     /**
+     * Get all the location records that are assigned to at least one service.
+     *
+     * @return array Returns an array of locations.
+     */
+    public function get_available_locations(): array
+    {
+        $locations = $this->db
+            ->distinct()
+            ->select(
+                'locations.id, locations.name, services.id_locations',
+            )
+            ->from('locations')
+            ->join('services', 'services.id_locations = locations.id', 'inner')
+            ->order_by('locations.name ASC')
+            ->get()
+            ->result_array();
+
+        foreach ($locations as &$location) {
+            $this->cast($location);
+        }
+
+        return $locations;
+    }
+
+    /**
      * Get the query builder interface, configured for use with the service categories table.
      *
      * @return CI_DB_query_builder
