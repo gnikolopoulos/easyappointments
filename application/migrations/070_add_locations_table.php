@@ -73,20 +73,6 @@ class Migration_Add_locations_table extends EA_Migration
             INSERT INTO `'.$this->db->dbprefix('locations').'` (`name`, `create_datetime`, update_datetime)
             SELECT DISTINCT TRIM(`location`), NOW(), NOW() FROM `'.$this->db->dbprefix('services').'`
         ');
-
-        $this->dbforge->add_column('services', [
-            'id_locations' => [
-                'type' => 'INT',
-                'constraint' => 11,
-                'default' => null,
-                'null' => true,
-                'after' => 'color',
-            ],
-        ]);
-
-        $this->db->query('UPDATE `'.$this->db->dbprefix('services').'` SET `id_locations` = (SELECT `id` FROM `'.$this->db->dbprefix('locations').'` WHERE `name` = `location`)');
-
-        $this->dbforge->drop_column('services', 'location');
     }
 
     /**
@@ -98,19 +84,6 @@ class Migration_Add_locations_table extends EA_Migration
             return;
         }
 
-        $this->dbforge->add_column('services', [
-            'location' => [
-                'type' => 'TEXT',
-                'default' => NULL,
-                'null' => true,
-                'after' => 'color',
-            ],
-        ]);
-
-        $this->db->query('UPDATE `'.$this->db->dbprefix('services').'` SET `location` = (SELECT `name` FROM `'.$this->db->dbprefix('locations').'` WHERE `id_locations` = `id`)');
-
         $this->dbforge->drop_table('locations');
-
-        $this->dbforge->drop_column('services', 'id_locations');
     }
 }
