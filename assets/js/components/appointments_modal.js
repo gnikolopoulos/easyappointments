@@ -35,7 +35,6 @@ App.Components.AppointmentsModal = (function () {
     const $selectCustomer = $('#select-customer');
     const $saveAppointment = $('#save-appointment');
     const $appointmentId = $('#appointment-id');
-    const $appointmentLocation = $('#appointment-location');
     const $appointmentMeetingLink = $('#appointment-meeting-link');
     const $appointmentStatus = $('#appointment-status');
     const $appointmentColor = $('#appointment-color');
@@ -106,11 +105,10 @@ App.Components.AppointmentsModal = (function () {
 
             const appointment = {
                 id_services: $selectService.val(),
-                id_location: $selectLocation.val(),
+                id_locations: $selectLocation.val(),
                 id_users_provider: $selectProvider.val(),
                 start_datetime: startDatetime,
                 end_datetime: endDatetime,
-                location: $appointmentLocation.val(),
                 meeting_link: $appointmentMeetingLink.val(),
                 color: App.Components.ColorSelection.getColor($appointmentColor),
                 status: $appointmentStatus.val(),

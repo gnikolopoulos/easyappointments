@@ -37,7 +37,7 @@ class Appointments_model extends EA_Model
         'book' => 'book_datetime',
         'start' => 'start_datetime',
         'end' => 'end_datetime',
-        'location' => 'location',
+        'id_locations' => 'id_locations',
         'meetingLink' => 'meeting_link',
         'color' => 'color',
         'status' => 'status',
@@ -480,17 +480,18 @@ class Appointments_model extends EA_Model
             ->select('appointments.*')
             ->from('appointments')
             ->join('services', 'services.id = appointments.id_services', 'left')
+            ->join('locations', 'locations.id = appointments.id_locations', 'left')
             ->join('users AS providers', 'providers.id = appointments.id_users_provider', 'inner')
             ->join('users AS customers', 'customers.id = appointments.id_users_customer', 'left')
             ->where('is_unavailability', false)
             ->group_start()
             ->like('appointments.start_datetime', $keyword)
             ->or_like('appointments.end_datetime', $keyword)
-            ->or_like('appointments.location', $keyword)
             ->or_like('appointments.hash', $keyword)
             ->or_like('appointments.notes', $keyword)
             ->or_like('services.name', $keyword)
             ->or_like('services.description', $keyword)
+            ->or_like('locations.name', $keyword)
             ->or_like('providers.first_name', $keyword)
             ->or_like('providers.last_name', $keyword)
             ->or_like('providers.email', $keyword)
@@ -610,7 +611,7 @@ class Appointments_model extends EA_Model
             'hash' => $appointment['hash'],
             'color' => $appointment['color'],
             'status' => $appointment['status'],
-            'location' => $appointment['location'],
+            'id_locations' => $appointment['id_locations'],
             'notes' => $appointment['notes'],
             'customerId' => $appointment['id_users_customer'] !== null ? (int) $appointment['id_users_customer'] : null,
             'providerId' => $appointment['id_users_provider'] !== null ? (int) $appointment['id_users_provider'] : null,
@@ -659,8 +660,8 @@ class Appointments_model extends EA_Model
             $decoded_resource['color'] = $appointment['color'];
         }
 
-        if (array_key_exists('location', $appointment)) {
-            $decoded_resource['location'] = $appointment['location'];
+        if (array_key_exists('id_locations', $appointment)) {
+            $decoded_resource['id_locations'] = $appointment['id_locations'];
         }
 
         if (array_key_exists('status', $appointment)) {

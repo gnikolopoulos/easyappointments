@@ -48,7 +48,7 @@ class Calendar extends EA_Controller
         'id',
         'start_datetime',
         'end_datetime',
-        'location',
+        'id_locations',
         'meeting_link',
         'notes',
         'color',
@@ -67,7 +67,7 @@ class Calendar extends EA_Controller
         'id',
         'start_datetime',
         'end_datetime',
-        'location',
+        'id_locations',
         'notes',
         'is_unavailability',
         'id_users_provider',
@@ -788,6 +788,7 @@ class Calendar extends EA_Controller
                 $appointment['provider'] = filter_sensitive_user_data(
                     $this->providers_model->find($appointment['id_users_provider']),
                 );
+                $appointment['location'] = $this->locations_model->find($appointment['id_locations']);
                 $appointment['service'] = $this->services_model->find($appointment['id_services']);
                 $appointment['customer'] = $this->customers_model->find($appointment['id_users_customer']);
             }
@@ -947,6 +948,7 @@ class Calendar extends EA_Controller
                 $appointment['provider'] = filter_sensitive_user_data(
                     $this->providers_model->find($appointment['id_users_provider']),
                 );
+                $appointment['location'] = $this->locations_model->find($appointment['id_locations']);
                 $appointment['service'] = $this->services_model->find($appointment['id_services']);
                 $appointment['customer'] = $this->customers_model->find($appointment['id_users_customer']);
             }

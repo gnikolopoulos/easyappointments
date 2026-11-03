@@ -47,7 +47,7 @@ class Booking extends EA_Controller
         'id',
         'start_datetime',
         'end_datetime',
-        'location',
+        'id_locations',
         'meeting_link',
         'notes',
         'color',
@@ -515,8 +515,8 @@ class Booking extends EA_Controller
                 $appointment['meeting_link'] = $this->jitsi_client->generate_link();
             }
 
-            if (empty($appointment['location']) && !empty($service['location'])) {
-                $appointment['location'] = $service['location'];
+            if (empty($appointment['id_locations']) && !empty($service['id_locations'])) {
+                $appointment['id_locations'] = $service['id_locations'];
             }
 
             if (empty($appointment['color']) && !empty($service['color'])) {
