@@ -2,7 +2,7 @@
 
 <?php section('content'); ?>
 
-<?php if (empty(vars('available_services')) || empty(vars('available_providers'))): ?>
+<?php if (empty(vars('available_locations')) || empty(vars('available_services')) || empty(vars('available_providers'))): ?>
 
 <?php component('booking_no_services_message'); ?>
 
@@ -18,7 +18,7 @@
 
 <!-- Select Service & Provider -->
 
-<?php component('booking_type_step', ['available_services' => vars('available_services')]); ?>
+<?php component('booking_type_step', ['available_locations' => vars('available_locations')]); ?>
 
 <!-- Pick An Appointment Date -->
 

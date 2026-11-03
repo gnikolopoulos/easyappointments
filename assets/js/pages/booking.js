@@ -18,6 +18,7 @@
  */
 App.Pages.Booking = (function () {
     const $selectDate = $('#select-date');
+    const $selectLocation = $('#select-location');
     const $selectService = $('#select-service');
     const $selectProvider = $('#select-provider');
     const $selectTimezone = $('#select-timezone');
@@ -347,6 +348,28 @@ App.Pages.Booking = (function () {
             App.Http.Booking.getAvailableHours(moment(date).format('YYYY-MM-DD'));
 
             App.Pages.Booking.updateConfirmFrame();
+        });
+
+        /**
+         * Event: Selected Location "Change"
+         *
+         * When the user clicks on a location, its available services should become visible.
+         */
+        $selectLocation.on('change', () => {
+            const locationId = $selectLocation.val();
+
+            $selectService.empty();
+            $selectService.parent().prop('hidden', !Boolean(locationId));
+
+            // Update the services select box.
+            vars('available_services').forEach((service) => {
+                // If the current servide is enabled for the selected location, add it to the list box.
+                if (Number(service.id_locations) === Number(locationId)) {
+                    $selectService.append(new Option(service.name, service.id));
+                }
+            });
+
+            $selectService.trigger('change');
         });
 
         /**
@@ -727,11 +750,13 @@ App.Pages.Booking = (function () {
      * customer settings and input for the appointment booking.
      */
     function updateConfirmFrame() {
+        const locationId = $selectLocation.val();
         const serviceId = $selectService.val();
         const providerId = $selectProvider.val();
 
         $displayBookingSelection.text(`${lang('service')} │ ${lang('provider')}`); // Notice: "│" is a custom ASCII char
 
+        const locationOptionText = locationId ? $selectLocation.find('option:selected').text() : lang('location');
         const serviceOptionText = serviceId ? $selectService.find('option:selected').text() : lang('service');
         const providerOptionText = providerId ? $selectProvider.find('option:selected').text() : lang('provider');
 
@@ -772,6 +797,9 @@ App.Pages.Booking = (function () {
         $('#appointment-details').html(`
             <div>
                 <div class="mb-2 fw-bold fs-3">
+                    ${App.Utils.String.escapeHtml(locationOptionText)}
+                </div>
+                <div class="mb-2 fw-bold">
                     ${App.Utils.String.escapeHtml(serviceOptionText)}
                 </div> 
                 <div class="mb-2 fw-bold text-muted">
