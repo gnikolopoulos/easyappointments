@@ -464,6 +464,7 @@ class Calendar extends EA_Controller
             $provider = $this->providers_model->find($appointment['id_users_provider']);
             $customer = $this->customers_model->find($appointment['id_users_customer']);
             $service = $this->services_model->find($appointment['id_services']);
+            $location = $this->locations_model->find($appointment['id_locations']);
 
             $company_color = setting('company_color');
 
@@ -485,6 +486,7 @@ class Calendar extends EA_Controller
                     $service,
                     $provider,
                     $customer,
+                    $location,
                     $settings,
                     $manage_mode,
                 );

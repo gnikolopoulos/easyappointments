@@ -55,6 +55,7 @@ class Email_messages
      * @param array $provider Provider data.
      * @param array $service Service data.
      * @param array $customer Customer data.
+     * @param array $location Location data.
      * @param array $settings App settings.
      * @param string $subject Email subject.
      * @param string $message Email message.
@@ -72,6 +73,7 @@ class Email_messages
         array $provider,
         array $service,
         array $customer,
+        array $location,
         array $settings,
         string $subject,
         string $message,
@@ -105,6 +107,7 @@ class Email_messages
                 'service' => $service,
                 'provider' => $provider,
                 'customer' => $customer,
+                'location' => $location,
                 'settings' => $settings,
                 'timezone' => $timezone,
                 'appointment_link' => $appointment_link,

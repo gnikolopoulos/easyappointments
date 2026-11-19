@@ -570,6 +570,7 @@ class Booking extends EA_Controller
 
             $appointment_id = $this->appointments_model->save($appointment);
             $appointment = $this->appointments_model->find($appointment_id);
+            $location = $this->locations_model->find($appointment['id_locations']);
 
             $company_color = setting('company_color');
 
@@ -590,6 +591,7 @@ class Booking extends EA_Controller
                 $service,
                 $provider,
                 $customer,
+                $location,
                 $settings,
                 $manage_mode,
             );

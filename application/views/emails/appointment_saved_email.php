@@ -19,6 +19,11 @@ $customer_full_name = trim($customer_first_name . ' ' . $customer_last_name);
 $customer_email = trim((string) ($customer['email'] ?? ''));
 $customer_phone_number = trim((string) ($customer['phone_number'] ?? ''));
 $customer_address = trim((string) ($customer['address'] ?? ''));
+$location_name = trim((string) ($location['name'] ?? ''));
+$location_address = trim((string) ($location['address'] ?? ''));
+$location_city = trim((string) ($location['city'] ?? ''));
+$location_state = trim((string) ($location['state'] ?? ''));
+$location_zip = trim((string) ($location['zip'] ?? ''));
 ?>
 
 <!doctype html>
@@ -485,21 +490,23 @@ $customer_address = trim((string) ($customer['address'] ?? ''));
                                             </tr>
                                             <?php endif; ?>
 
-                                            <?php if (!empty($appointment['location'])): ?>
+                                            <?php if (!empty($appointment['id_locations'])): ?>
                                                 <tr>
-                                                    <td class="label" style="padding: 3px;font-weight: bold;">
+                                                    <td rowspan="3" class="label" style="padding: 3px;font-weight: bold;">
                                                         <?= lang('location') ?>
                                                     </td>
                                                     <td style="padding: 3px;">
-                                                        <?php if (str_starts_with($appointment['location'], 'http')): ?>
-                                                            <a
-                                                                href="<?= e($appointment['location']) ?>"
-                                                                target="_blank">
-                                                                <?= e($appointment['location']) ?>
-                                                            </a>
-                                                        <?php else: ?>
-                                                            <?= e($appointment['location']) ?>
-                                                        <?php endif; ?>
+                                                        <?= e($location_name); ?>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="padding: 3px;">
+                                                        <?= e($location_address); ?>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="padding: 3px;">
+                                                        <?= sprintf("%s %s %s", e($location_city), e($location_state), e($location_zip)); ?>
                                                     </td>
                                                 </tr>
                                             <?php endif; ?>

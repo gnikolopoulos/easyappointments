@@ -50,6 +50,7 @@ class Notifications
      * @param array $service Service data.
      * @param array $provider Provider data.
      * @param array $customer Customer data.
+     * @param array $location Location data.
      * @param array $settings Required settings.
      * @param bool|false $manage_mode Manage mode.
      */
@@ -58,6 +59,7 @@ class Notifications
         array $service,
         array $provider,
         array $customer,
+        array $location,
         array $settings,
         bool $manage_mode = false,
     ): void {
@@ -87,6 +89,7 @@ class Notifications
                         $provider,
                         $service,
                         $customer,
+                        $location,
                         $settings,
                         $subject,
                         $message,
@@ -118,6 +121,7 @@ class Notifications
                         $provider,
                         $service,
                         $customer,
+                        $location,
                         $settings,
                         $subject,
                         $message,
@@ -150,6 +154,7 @@ class Notifications
                         $provider,
                         $service,
                         $customer,
+                        $location,
                         $settings,
                         $subject,
                         $message,
@@ -186,6 +191,7 @@ class Notifications
                         $provider,
                         $service,
                         $customer,
+                        $location,
                         $settings,
                         $subject,
                         $message,
