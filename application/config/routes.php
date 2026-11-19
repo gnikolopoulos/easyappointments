@@ -162,6 +162,8 @@ route_api_resource($route, 'secretaries', 'api/v1/');
 
 route_api_resource($route, 'services', 'api/v1/');
 
+route_api_resource($route, 'locations', 'api/v1/');
+
 route_api_resource($route, 'unavailabilities', 'api/v1/');
 
 route_api_resource($route, 'webhooks', 'api/v1/');

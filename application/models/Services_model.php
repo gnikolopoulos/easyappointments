@@ -509,7 +509,7 @@ class Services_model extends EA_Model
             'price' => (float) $service['price'],
             'currency' => $service['currency'],
             'description' => $service['description'],
-            'id_locations' => $service['id_locations'],
+            'locationId' => $service['id_locations'],
             'slotInterval' => (int) $service['slot_interval'],
             'attendantsNumber' => (int) $service['attendants_number'],
             'isPrivate' => (bool) $service['is_private'],
